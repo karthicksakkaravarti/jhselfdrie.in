@@ -1,0 +1,5 @@
+import { ImageResponse } from "next/og";
+export const alt = "JH Self Drive — self-drive car rental in Ramanathapuram";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+export default function OpenGraphImage() { return new ImageResponse(<div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", padding: 80, background: "#0d665d", color: "white", fontFamily: "Georgia, serif" }}><div style={{ display: "flex", flexDirection: "column" }}><div style={{ display: "flex", alignItems: "center", gap: 20, fontFamily: "Arial", fontSize: 28, fontWeight: 700 }}><span style={{ display: "flex", alignItems: "center", justifyContent: "center", width: 70, height: 70, borderRadius: 20, background: "#ed684d" }}>JH</span>JH SELF DRIVE</div><div style={{ display: "flex", marginTop: 72, maxWidth: 980, fontSize: 92, lineHeight: .96, letterSpacing: -4 }}>Your road. <span style={{ color: "#ffc8b8", fontStyle: "italic", marginLeft: 18 }}>Your time.</span></div><div style={{ marginTop: 38, fontFamily: "Arial", fontSize: 28, color: "#b8d6d1" }}>Self-drive car rental in Ramanathapuram</div></div></div>, size); }
