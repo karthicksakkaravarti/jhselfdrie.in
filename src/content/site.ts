@@ -4,9 +4,9 @@ export const site = {
   shortName: "JH",
   tagline: "Your road. Your time.",
   description: "Clean, reliable self-drive cars in Ramanathapuram. Enquire in a minute and continue on WhatsApp.",
-  phoneDisplay: "+91 98765 43210", // TODO: replace
-  phoneE164: "+919876543210", // TODO: replace
-  whatsappNumber: "919876543210", // TODO: replace, digits only
+  phoneDisplay: "+91 93602 24137", // TODO: replace
+  phoneE164: "+9193602 24137", // TODO: replace
+  whatsappNumber: "9193602 24137", // TODO: replace, digits only
   email: "hello@jhselfdrive.in", // TODO: replace
   address: "Ramanathapuram, Tamil Nadu 623501", // TODO: replace full address
   hours: "Open daily · 7:00 AM–10:00 PM", // TODO: confirm
