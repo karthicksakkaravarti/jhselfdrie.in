@@ -17,6 +17,10 @@ The page itself renders without Supabase credentials. Form submissions and first
 - Set all `.env.example` variables in Vercel and connect `jhselfdrive.in`.
 - Verify RLS using the browser anon client, GA4 DebugView and the repeat-phone enquiry scenario from the product brief.
 
+## Vercel deployment
+
+The root `vercel.json` explicitly selects Next.js and uses `npm ci` followed by `npm run build`. In the Vercel project, keep **Root Directory** empty (repository root), set the production branch to `main`, add the variables from `.env.example`, then redeploy. Secret values belong in Vercel Project Settings and must not be committed to this repository.
+
 ## Security model
 
 No Supabase key is shipped to the browser. Server code uses the service-role key; all customer-facing tables have RLS enabled with no public policy. Enquiries are protected by a honeypot, a minimum completion time and a hashed-IP rate limit of five attempts per hour.
